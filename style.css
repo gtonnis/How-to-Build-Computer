@@ -4,48 +4,67 @@
 
 body {
   font-family: Arial;
-  
-  background: #c4e3ed;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  text-shadow: black 2px 2px;
     font-size: 16px;
-    padding-top: 50;
+/*    padding-top: 50;*/
 }
 
 /* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: silver;
-    font-size: 25px;
+header {
+  padding:15px;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     margin: auto;
 }
 
+h1{
+   text-align: center;
+    float:none;
+    color:white;
+    text-shadow: black 3px 3px;
+}
 
-/* Style the top navigation bar */
-.topnav {
+#navbar {
   overflow: hidden;
   background-color: #333;
-    text-decoration-color: white
 }
 
-/* Style the topnav links */
-.topnav a {
+#navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-    text-decoration-color: white
-}
-#navbar{
-    display: contents;
-    position: fixed;
-    
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Change color on hover */
-.topnav a:hover {
+#navbar a:hover {
+  border-radius: 30px;
   background-color: #ddd;
   color: black;
 }
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -58,7 +77,8 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: #c4e3ed;
+ 
+
   padding-left: 20px;
 }
 
@@ -68,19 +88,21 @@ body {
 }
 /* Fake image */
 .image {
-  background-color: gray;
+  background-color:blue;
   width: 50%;
   padding: 10px;
 }
 .profile-img{
-     background-color: gray;
+     background-color: blue;
   width: 40%;
   padding: 10px;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: #c4e3ed;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
   margin-top: 20px;
     text-align: center;
@@ -104,7 +126,9 @@ header{
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: 20px;
 }
 

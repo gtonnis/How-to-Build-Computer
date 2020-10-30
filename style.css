@@ -3,70 +3,56 @@
 }
 
 body {
-  font-family: Arial;
-  background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:white;
-  text-shadow: black 2px 2px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color:  whitesmoke;
     font-size: 16px;
-/*    padding-top: 50;*/
 }
 
-/* Header/Blog Title */
-header {
-  padding:15px;
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Header */
+.header { 
      margin: auto;
+    top:0;
 }
 
 h1{
    text-align: center;
-    float:none;
-    color:white;
-    text-shadow: black 3px 3px;
+    float:none;   
+}
+
+.flex-container{
+  background-color: gainsboro;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+ text-shadow: 1px 1px dimgrey;
+  position: fixed;
+  top: 1;
+  width: 100%;
 }
 
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-clip: text;
+  text-shadow: 2px 2px white;
 }
 
 #navbar a:hover {
-  border-radius: 30px;
-  background-color: #ddd;
-  color: black;
+  
+  color: blue;
+}
+
+#main-doc{
+  padding-top: 10px;
 }
 
 
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-
-/* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -77,8 +63,6 @@ h1{
 .rightcolumn {
   float: left;
   width: 25%;
- 
-
   padding-left: 20px;
 }
 
@@ -86,23 +70,21 @@ h1{
     display: flex;
   justify-content: center;
 }
-/* Fake image */
+/*Image */
 .image {
-  background-color:blue;
   width: 50%;
   padding: 10px;
 }
 .profile-img{
-     background-color: blue;
+     border-radius: 50%;
   width: 40%;
   padding: 10px;
 }
 
-/* Add a card effect for articles */
+/* Cards */
 .card {
-  background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: gainsboro;
+ box-shadow: 1px 1px 1px dimgray;
   padding: 20px;
   margin-top: 20px;
     text-align: center;
@@ -120,16 +102,13 @@ header{
 } 
 
 
-
-
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: gainsboro ;
   margin-top: 20px;
+  box-shadow: 1px 1px 1px dimgray;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -147,14 +126,7 @@ header{
     width: 100%;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
+
 ul {
   columns: 3;
   -webkit-columns: 3;

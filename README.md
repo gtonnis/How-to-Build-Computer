@@ -5,4 +5,4 @@ Linking a external part picker site for specific part selection and price shoppi
 Start to finish instructions on assembling all the parts
 instructions on downloading and installing windows 10
 
-![](build-pc-2.png)
+![](pc-build.png)
